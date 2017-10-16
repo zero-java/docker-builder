@@ -23,6 +23,6 @@ ADD spring-cloud-zuul-1.0-SNAPSHOT.jar /context/zuul.jar
 # 8005
 ADD spring_cloud_zipkin-1.0-SNAPSHOT.jar /context/zipkin.jar
 ADD start.sh /start.sh
-EXPOSE 8762 2181 9092 8000 8002 8004 8003 2000 8005 8001
+EXPOSE 2000 8762 2181 9092 8000 8002 8004 8003 8005 8001
 ENV JAVA_OPTS="-Xms16m -Xmx128m"
 ENTRYPOINT ["/start.sh"]
