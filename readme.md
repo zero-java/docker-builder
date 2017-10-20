@@ -32,5 +32,6 @@ REM     @FOR /f "tokens=*" %i IN ('docker-machine env default') DO @%i
 
 docker-machine restart dev
 
-docker run -p 8762:8762 -p 2181:2181 -p 9092:9092 -p 8000:8000 -p 8001:8001 -p 8002:8002 -p 8003:8003 -p 8004:8004 -p 8005:8005 -dit registry.cn-hangzhou.aliyuncs.com/scvzerng/cloud-example:v2
+docker run -p 8762:8762 -p 2181:2181 -p 9092:9092 -p 8000:8000 -p 8001:8001 -p 8002:8002 -p 8003:8003 -p 8004:8004 -p 8005:8005 -p 2000:2000 -dit registry.cn-hangzhou.aliyuncs.com/scvzerng/cloud-example:v3
+docker push registry.cn-hangzhou.aliyuncs.com/scvzerng/cloud-example:v3
 ```
